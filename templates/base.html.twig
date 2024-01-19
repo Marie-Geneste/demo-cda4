@@ -12,6 +12,10 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% include "/template_parts/_header.html" %}
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+        <footer>Footer</footer>
     </body>
 </html>
