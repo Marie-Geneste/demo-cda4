@@ -10,10 +10,11 @@
 
 <div class="example-wrapper">
     <h1>Liste des produits</h1>
+    <a href="{{path('app_produit_new')}}">Créer un produit</a>
 
-    <pre>
+    {# <pre>
         {{ dump(produits) }}
-    </pre>
+    </pre> #}
 
     {% for produit in produits %}
         <div>{{produit.name}}</div>
